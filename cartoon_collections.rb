@@ -1,6 +1,6 @@
 def roll_call_dwarves(dwarves)
-  dwarves.split
-  display_dwarves = dwarves.each_with_index(1) do |item, index| "#{index}, #{item}"
+  display_dwarves = dwarves.each_with_index { |item, index| dwarves[item] = index}
+  "#{index.to_s}, #{item}"
   end
   puts "#{display_dwarves[index]} #{display_dwarves[item]}"
 end
