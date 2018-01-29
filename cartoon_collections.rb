@@ -13,7 +13,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |call|
-    puts "#{call.capitalize}!"
+    puts "#{call.capitalize.join("!")}"
   end
 end
 
