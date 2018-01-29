@@ -2,7 +2,7 @@ def roll_call_dwarves(dwarves)
   i = 0
   display_dwarves = []
 
-  while i < display_dwarves
+  while i < dwarves
     display_dwarves = dwarves.collect.with_index(1) do |element, index| "#{index}, #{element}"
     i += 1
   end
