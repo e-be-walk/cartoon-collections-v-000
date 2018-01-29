@@ -1,7 +1,12 @@
 def roll_call_dwarves(dwarves)
-  display_dwarves = dwarves.each_with_index { |item, index| dwarves[item] = index}
+  i = 0
+  display_dwarves = []
+
+  while i < display_dwarves
+    display_dwarves = dwarves.collect.with_index(1) do |element, index| "#{index}, #{element}"
+    i += 1
   end
-  puts "#{display_dwarves[index.to_s]} #{display_dwarves[item]}"
+  puts display_dwarves
 end
 end
 
