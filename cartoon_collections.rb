@@ -6,7 +6,7 @@ def roll_call_dwarves(dwarves)
     display_dwarves = dwarves.collect.with_index(1) do |element, index| "#{index}, #{element}"
     i += 1
   end
-  puts display_dwarves
+  puts display_dwarves* %Q{. \n} + "."
 end
 end
 
