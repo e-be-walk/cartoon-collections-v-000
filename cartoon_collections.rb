@@ -6,14 +6,14 @@ def roll_call_dwarves(dwarves)
     display_dwarves = dwarves.collect.with_index(1) do |element, index| "#{index}, #{element}"
     i += 1
   end
-  puts display_dwarves* %Q{. \n} + "."
+  puts display_dwarves
 end
 end
 
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.collect do |call|
-    puts "#{call.capitalize.join("!")}"
+  planeteer_calls.map! {|call| call.capitalize}
+    puts "#{call.join("!")}"
   end
 end
 
