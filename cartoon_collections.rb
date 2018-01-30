@@ -21,6 +21,14 @@ def long_planeteer_calls(array)
   new_array.any?{|i| i > 4}
 end
 
-def find_the_cheese(cheese_types)
+def find_the_cheese(cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
+
+  love_cheese = cheese_types & cheeses
+
+  if love_cheese == []
+    nil
+  else
+    "#{cheese[0]}"
+  end
 end
