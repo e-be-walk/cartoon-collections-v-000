@@ -29,6 +29,6 @@ def find_the_cheese(cheeses)
   if love_cheese == []
     nil
   else
-    "#{cheese[0]}"
+    "#{love_cheese[0]}"
   end
 end
